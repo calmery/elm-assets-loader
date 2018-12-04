@@ -30,8 +30,8 @@ const loader = function(source, inputSourceMap) {
                     You gave me: ${config.dynamicRequires}`);
   }
 
-  const packageName = config['package'] || 'user/project';
-  const taggerName = '_' + [
+  const packageName = config['package'] || 'author/project';
+  const taggerName = [
     packageName.replace(/-/g, '_').replace(/\//g, '$'),
     config.module.replace(/\./g, '_'),
     config.tagger
